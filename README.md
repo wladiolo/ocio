@@ -1,15 +1,21 @@
+# ocio
+
 *ocio* is a very simple program that uses nmap functionalities to monitor a range of IPs.
 
-== Scenario ==
+## Scenario
+
 *ocio* wants to help people that need to monitor a range of IPs and want to be alerted if some specific port or services are open.
+
 *ocio* can also report on the status of SSL/TLS.
 
-== How to use ocio ==
+## How to use ocio 
+
 *ocio* is made of three scripts that perform different operations.
 
-=== ocio.sh ===
+### ocio.sh
 It carries out the main functionalities of ocio (find live IPs, scan or open ports, scan SSL/TLS).
 
+```
 ./ocio.sh [OPTIONS]
  -i <input>: input file with IPs or subnet, one per line (required)
  -m <mode>: mode of execution (required):
@@ -25,3 +31,4 @@ It carries out the main functionalities of ocio (find live IPs, scan or open por
    -pb none -sb none match all
  -s <email>: send summary to the specified email address (optional)
  -h print this help (optional)
+```
