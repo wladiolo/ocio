@@ -254,6 +254,9 @@ fi
 #######################################################
 ## Send email #########################################
 # TODO ...
+echo -e "${GREEN}[+] ${WHITE}Sending summary to $RECIPIENT"
+cat $SCANDIR/open_port_summary.log | mail -s "Open port summary" -s $RECIPIENT
+cat $SCANDIR/tls_analysis_summary.log | mail -s "SSL/TLS summary" -s $RECIPIENT
 
 #######################################################
 ## Final operations ###################################

@@ -6,7 +6,7 @@
 
 # how to use ocio_tls_discovery_analysis
 # ./ocio_open_port_analysis.sh [OPTIONS]
-# -i <file>: nmap results of a port scan in .nmap format (required)
+# -i <file>: nmap results of a SSL/TLS scan in .nmap format (required)
 # -o <dir>: output directory (optional)
 # -h print this help (optional)
 
@@ -207,7 +207,7 @@ Hregex="\-h"
 if [[ $# -eq 0 || $PARAMETERS =~ $Hregex ]]; then
         echo -e "${WHITE}ocio usage:"
         echo -e "ocio_tls_discovery_analysis.sh [OPTIONS]"
-        echo -e "-i file: nmap results of a port scan in .nmap format (required)"
+        echo -e "-i file: nmap results of a SSL/TLS scan in .nmap format (required)"
 		echo -e "-o <dir>: output directory (optional)"
         echo -e "-h: print this help"
         echo -e "example: ./ocio_tls_discovery_analysis.sh -i input.nmap -o /home/wladiolo/scan"
