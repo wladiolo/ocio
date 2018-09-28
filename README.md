@@ -74,3 +74,22 @@ You can use this script with every .nmap output file (also if is not generated b
  -o <dir>: output directory (optional)
  -h print this help (optional)
 ```
+
+### ocio_tls_discovery_analysis.sh
+
+(WIP)
+
+```
+ ./ocio_open_port_analysis.sh [OPTIONS]
+ -i <file>: nmap results of a port scan in .nmap format (required)
+ -o <dir>: output directory (optional)
+ -h print this help (optional)
+```
+
+## Versioning
+
+## Authors
+
+## License
+
+
